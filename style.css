@@ -127,6 +127,7 @@ padding: 10px 20px;
     margin-right: 10px;
     /* justify-content: center; */
         margin-top: 10px;
+        position: relative;
  }
 
  .artpagelink:hover {
