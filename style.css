@@ -1,82 +1,69 @@
-body,
 html {
     width: 100%;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    /* text-align: center; */
     margin: 0px;
     padding: 0px;
-
+    display: flex;
+    justify-content: center;
 }
 
 #bgvid {
-    position: fixed;
+
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
 
-  
-    top:100px;
-    left:0px;
-    width:100%;
-    height: calc(100% - 80px);
-    object-fit:cover;
+    object-fit: cover;
     margin: 0px;
     padding: 0px;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
 }
-
 
 
 
 header {
-    height:100px;
-    padding: 20px;
-    
+    height: 100px;
+    grid-area: header;
+    text-shadow: 1px 1px 2px #000000;
 }
-
-
 
 h1 {
     color: black;
     font-size: 3rem;
-font-family: 'Montserrat', sans-serif;
-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 10px;
     background-color: rgba(128, 203, 196, 0.5);
     margin-bottom: 20px;
-    /* flex-wrap: wrap;
-   justify-content: center;
-   align-items: center; */
 }
 
-
-
-.btn{
-
-font-weight: 700px;
-border-radius: 300px;
-text-transform: uppercase;
+.btn {
+    font-weight: 700px;
+    border-radius: 300px;
+    text-transform: uppercase;
 }
+
 .btn-xl {
-    padding:1rem 2rem;
+    padding: 1rem 2rem;
 }
 
-.btn-info{
+.btn-info {
     background-color: rgb(189, 231, 231);
-
 }
 
 .btn-info:hover {
     background-color: #40826d;
-    /* border-width: 4px; */
 }
 
-.viewartpage:hover {
-    text-decoration: underline;
-}
 
 hr {
     margin: 20px auto;
@@ -91,31 +78,20 @@ hr {
     height: 10rem;
 }
 
-
 .container {
     display: grid;
-    grid-template-areas:
-        "header"
-        "video-container";
+    grid-template-areas: "header""video-container";
     grid-template-rows: 80px 1fr;
-    /* Set the height of your header */
     height: 100vh;
     justify-items: center;
-    overflow-x:hidden;
+    overflow-x: hidden;
     margin: 0 auto;
- 
 }
 
-header {
-    grid-area: header;
-    text-shadow: 1px 1px 2px #000000;
-
-}
 header img {
     width: 200px;
     height: auto;
     margin-bottom: 10px;
-  
 }
 
 .video-container {
@@ -124,15 +100,36 @@ header img {
     overflow: hidden;
 }
 
-#bgvid {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
+
+
+.banner{
+    background-color: #f2f2f2;
+    padding: 20px;
+   
 }
 
+.banner-p {
+font-size: 24px;
+ font-weight: bold;
+text-align: center;
+color: #333;
+ margin-top: 20px;
+}
+
+
+ 
+ .artpagelink{
+padding: 10px 20px;
+    background-color: #66c2a5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    justify-content: center;
+        margin-top: 10px;
+        
+ }
+
+ .artpagelink:hover {
+    text-decoration: underline !important;
+ }
