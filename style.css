@@ -138,7 +138,10 @@ header img {
 }
 
 .artpagelink {
-    padding: 10px 20px;
+    padding: 8px 16px;
+    font-size: 30px;
+    display: inline-block;
+    white-space: nowrap;
     background-color: #66c2a5;
     color: #fff;
     text-decoration: none;
@@ -146,6 +149,12 @@ header img {
     margin-right: 10px;
     margin-top: 10px;
     position: relative;
+}
+@media (max-width: 768px) {
+    .artpagelink {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
 }
 
 .artpagelink:hover {
