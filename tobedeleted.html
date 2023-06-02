@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container d-flex h-100">
+        <!-- align-items-center removed from the classes above to have the heading on top, rather than center -->
+        <div class="row">
+
+
+            <header class="text-center col-12">
+
+                <h1>
+
+                    <div>
+                        <p class="banner-p">Hello! I am <span style="color: #66c2a5;">Hanieh</span></p>
+                        <p style="font-size: 16px; text-align: center;">
+                            You can view my art page by clicking on the link below
+                        </p>
+
+                        <a href="https://artbyhanieh.netlify.app/" class="artpagelink">VIEW ART PAGE</a>
+
+
+
+
+                    </div>
+
+
+
+                    <img src="lime-489.png" alt="Coding Illustration, a painter">
+                </h1>
+
+            </header>
+            <video autoplay loop muted poster="pexels-ruvim-miksanskiy-1918465-1920x1080-24fps.mp4" id="bgvid">
+                <source src="pexels-ruvim-miksanskiy-1918465-1920x1080-24fps.mp4" type="video/mp4">
+            </video>
+            <div class="buffer col-12"></div>
+            <div class="buffer col-12"></div>
+            <div class="buffer col-12"></div>
+            <section class="text-center col-12">
+
+                <div
+                    style="text-align: center; background-color: rgb(189, 231, 231);; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); border-radius: 10px;">
+                    <p style="font-size: 18px; margin: 0;">
+                        Like what you see and have an enquiry?
+                    </p>
+                </div>
+
+
+                <hr>
+                <a
+                    href="https://us9.list-manage.com/contact-form?u=294d11a6d4ee9e0db758ba6b4&form_id=1f926de4e64b467f76c052a6ffb1469e">
+                    <button class="btn btn-info btn-xl" id="myButton">Get in touch!</button>
+                </a>
+            </section>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+html {
+width: 100%;
+height: 100%;
+font-family: 'Montserrat', sans-serif;
+margin: 0px;
+padding: 0px;
+display: flex;
+justify-content: center;
+}
+
+#bgvid {
+
+right: 0;
+bottom: 0;
+
+object-fit: cover;
+margin: 0px;
+padding: 0px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -1;
+}
+
+
+
+header {
+height: 100px;
+grid-area: header;
+text-shadow: 1px 1px 2px #000000;
+}
+
+h1 {
+color: black;
+font-size: 3rem;
+font-family: 'Montserrat', sans-serif;
+box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+border-radius: 10px;
+background-color: rgba(128, 203, 196, 0.5);
+margin-bottom: 20px;
+}
+
+.btn {
+font-weight: 700px;
+border-radius: 300px;
+text-transform: uppercase;
+}
+
+.btn-xl {
+padding: 1rem 2rem;
+}
+
+.btn-info {
+background-color: rgb(189, 231, 231);
+}
+
+.btn-info:hover {
+background-color: #40826d;
+}
+
+
+hr {
+margin: 20px auto;
+color: rgb(189, 231, 231);
+border: 3px solid rgb(189, 231, 231);
+max-width: 65px;
+opacity: 1;
+text-align: center;
+}
+
+.buffer {
+height: 10rem;
+}
+
+.container {
+display: grid;
+grid-template-areas: "header""video-container";
+grid-template-rows: 80px 1fr;
+height: 100vh;
+justify-items: center;
+overflow-x: hidden;
+margin: 0 auto;
+}
+
+header img {
+width: 200px;
+height: auto;
+margin-bottom: 10px;
+}
+
+.video-container {
+grid-area: video-container;
+position: relative;
+overflow: hidden;
+}
+
+
+
+.banner{
+background-color: #f2f2f2;
+padding: 20px;
+
+}
+
+.banner-p {
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+color: black;
+margin-top: 20px;
+}
+
+
+
+.artpagelink{
+padding: 10px 20px;
+background-color: #66c2a5;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+margin-right: 10px;
+/* justify-content: center; */
+margin-top: 10px;
+position: relative;
+}
+
+.artpagelink:hover {
+text-decoration: underline !important;
+}
