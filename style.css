@@ -150,10 +150,10 @@ header img {
     margin-top: 10px;
     position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .artpagelink {
         padding: 6px 12px;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
